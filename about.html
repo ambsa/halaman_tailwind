@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="/assets/img/logo.png" type="image/png">
+
     <!-- Tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/a329084b4e.js" crossorigin="anonymous"></script>
@@ -19,40 +23,41 @@
         <div class="container mx-auto px-6 flex justify-between items-center py-6">
             <!-- Logo -->
             <div>
-                <a href="#"><img src="/assets/img/logo.png" alt="Logo" class="h-6 md:h-8 lg:h-10 w-auto"></a>
+                <a href="/index.html"><img src="/assets/img/logo.png" alt="Logo" class="h-6 md:h-8 lg:h-10 w-auto"></a>
             </div>
-    
+
             <!-- Menu -->
             <div class="hidden md:flex space-x-8">
                 <a href="/index.html"
-                    class="text-purple-900 font-semibold hover:text-purple-600 border-b-2 border-transparent hover:border-purple-600 transition-all duration-300">
+                    class="text-purple-900 text-lg font-semibold hover:text-purple-600 border-b-2 border-transparent hover:border-purple-600 transition-all duration-300">
                     Home
                 </a>
                 <a href="/about.html"
-                    class="text-purple-900 font-semibold hover:text-purple-600 border-b-2 border-transparent hover:border-purple-600 transition-all duration-300">
+                    class="text-purple-900 text-lg font-semibold hover:text-purple-600 border-b-2 border-transparent hover:border-purple-600 transition-all duration-300">
                     About Us
                 </a>
                 <a href="/blog.html"
-                    class="text-purple-900 font-semibold hover:text-purple-600 border-b-2 border-transparent hover:border-purple-600 transition-all duration-300">
+                    class="text-purple-900 text-lg font-semibold hover:text-purple-600 border-b-2 border-transparent hover:border-purple-600 transition-all duration-300">
                     Blog
                 </a>
                 <a href="/belajar.html"
-                    class="text-purple-900 font-semibold hover:text-purple-600 border-b-2 border-transparent hover:border-purple-600 transition-all duration-300">
+                    class="text-purple-900 text-lg font-semibold hover:text-purple-600 border-b-2 border-transparent hover:border-purple-600 transition-all duration-300">
                     Belajar
                 </a>
             </div>
-    
+
             <!-- Button -->
             <div class="hidden md:block space-x-4">
                 <a href="#"
                     class="px-4 py-2 border border-purple-400 text-purple-900 hover:text-white rounded-lg hover:bg-purple-600 transition-colors duration-300">
                     Sign Up
                 </a>
-                <a href="#" class="px-4 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-900 transition-colors duration-300">
+                <a href="#"
+                    class="px-4 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-900 transition-colors duration-300">
                     Sign In
                 </a>
             </div>
-    
+
             <!-- Mobile Menu Button -->
             <div class="md:hidden">
                 <button id="mobile-menu-button" class="focus:outline-none">
@@ -60,14 +65,27 @@
                 </button>
             </div>
         </div>
-    
+
+        <!-- Mobile Menu -->
         <!-- Mobile Menu -->
         <div id="mobile-menu"
             class="hidden flex-col space-y-2 py-4 px-6 bg-white shadow-lg transform transition-transform duration-500 ease-in-out opacity-0">
-            <a href="/index.html" class="block text-purple-900 font-semibold hover:text-purple-600">Home</a>
+            <a href="/index.html"
+                class="block text-purple-900 font-semibold hover:text-purple-600 nav-link active:text-purple-900">Home</a>
             <a href="/about.html" class="block text-purple-900 font-semibold hover:text-purple-600">About</a>
             <a href="/blog.html" class="block text-purple-900 font-semibold hover:text-purple-600">Blog</a>
             <a href="/belajar.html" class="block text-purple-900 font-semibold hover:text-purple-600">Belajar</a>
+            <!-- Mobile Buttons -->
+            <div class="mt-4 space-y-2">
+                <a href="#"
+                    class="block w-24 px-4 py-2 text-center border border-purple-400 text-purple-900 hover:text-white rounded-lg hover:bg-purple-600 transition-colors duration-300">
+                    Sign Up
+                </a>
+                <a href="#"
+                    class="block w-24 px-4 py-2 text-center bg-purple-600 text-white rounded-lg hover:bg-purple-900 transition-colors duration-300">
+                    Sign In
+                </a>
+            </div>
         </div>
     </nav>
     <!-- End Navbar -->
@@ -82,7 +100,8 @@
                     Tentang <span class="text-emerald-500">Lingualearn</span>
                 </h1>
                 <p class="text-purple-900 text-lg text-justify">
-                    <span class="font-bold">LinguaLearn </span> Hadir Untuk Semua Kalangan dan Gaya Belajar yang Berbeda!
+                    <span class="font-bold">LinguaLearn </span> Hadir Untuk Semua Kalangan dan Gaya Belajar yang
+                    Berbeda!
                     Dengan pendekatan yang fleksibel, LinguaLearn menyesuaikan diri dengan cara belajar setiap individu,
                     memastikan pengalaman belajar bahasa yang efektif dan menyenangkan untuk semua orang.
                 </p>
@@ -91,9 +110,12 @@
             <!-- Video Hero -->
             <div class="lg:w-1/2 w-full flex justify-center lg:pl-12">
                 <div class="relative pt-[56.25%] w-full">
-                    <iframe class="absolute top-0 left-0 w-full h-full" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe class="absolute top-0 left-0 w-full h-full"
+                        src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
                 </div>
-            </div>                     
+            </div>
         </div>
     </section>
 
@@ -103,7 +125,7 @@
             <h2 class="text-md font-semibold text-center text-teal-500">Visi Misi LinguaLearn</h2>
             <h3 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-center text-purple-900 mb-8 mt-5">
                 Visi Misi Kami Sebagai Penyedia Platform Pendidikan
-            </h3>            
+            </h3>
         </div>
 
         <div class="card-section grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 max-w-5xl mx-auto px-4 py-7">
@@ -115,8 +137,8 @@
                     <h3 class="text-lg font-bold text-purple-900">Visi</h3>
                 </div>
                 <p class="text-sm text-slate-500 text-center">
-                    Menjadi Stratup yang mempelopori  transformasi pendidikan bahasa global 
-                    dengan menyediakan platform inovatif yang menghubungkan pembelajar dengan 
+                    Menjadi Stratup yang mempelopori transformasi pendidikan bahasa global
+                    dengan menyediakan platform inovatif yang menghubungkan pembelajar dengan
                     kualitas pembelajaran tinggi yang mudah diakses dan terjangkau.
                 </p>
             </div>
@@ -134,18 +156,19 @@
                     <li class="mb-2">Menawarkan kurikulum yang komprehensif dan terstruktur</li>
                     <li class="mb-2">Menyediakan akses terhadap sumber belajar Internasiona</li>
                 </ol>
-                
+
             </div>
 
             <!-- Card 3 -->
             <div class="card bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
                 <div class="flex items-center mb-4 justify-center">
-                   
+
                     <!-- Teks -->
                     <h3 class="text-lg font-bold text-purple-900">Komitmen</h3>
                 </div>
                 <p class="text-sm text-slate-500 text-center">
-                    Dengan Menjangkau Pengguna Global Dan Menyatukannya Dalam Forum Diskusi Sehingga Dapat Belajar Bersama Pengguna Lain
+                    Dengan Menjangkau Pengguna Global Dan Menyatukannya Dalam Forum Diskusi Sehingga Dapat Belajar
+                    Bersama Pengguna Lain
                 </p>
             </div>
         </div>

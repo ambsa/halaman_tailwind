@@ -5,11 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="/assets/img/logo.png" type="image/png">
+
     <!-- Tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/a329084b4e.js" crossorigin="anonymous"></script>
     <!-- Flaticon -->
-    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
 </head>
 
 <body>
@@ -18,40 +23,41 @@
         <div class="container mx-auto px-6 flex justify-between items-center py-6">
             <!-- Logo -->
             <div>
-                <a href="#"><img src="/assets/img/logo.png" alt="Logo" class="h-6 md:h-8 lg:h-10 w-auto"></a>
+                <a href="/index.html"><img src="/assets/img/logo.png" alt="Logo" class="h-6 md:h-8 lg:h-10 w-auto"></a>
             </div>
-    
+
             <!-- Menu -->
             <div class="hidden md:flex space-x-8">
                 <a href="/index.html"
-                    class="text-purple-900 font-semibold hover:text-purple-600 border-b-2 border-transparent hover:border-purple-600 transition-all duration-300">
+                    class="text-purple-900 text-lg font-semibold hover:text-purple-600 border-b-2 border-transparent hover:border-purple-600 transition-all duration-300">
                     Home
                 </a>
                 <a href="/about.html"
-                    class="text-purple-900 font-semibold hover:text-purple-600 border-b-2 border-transparent hover:border-purple-600 transition-all duration-300">
+                    class="text-purple-900 text-lg font-semibold hover:text-purple-600 border-b-2 border-transparent hover:border-purple-600 transition-all duration-300">
                     About Us
                 </a>
                 <a href="/blog.html"
-                    class="text-purple-900 font-semibold hover:text-purple-600 border-b-2 border-transparent hover:border-purple-600 transition-all duration-300">
+                    class="text-purple-900 text-lg font-semibold hover:text-purple-600 border-b-2 border-transparent hover:border-purple-600 transition-all duration-300">
                     Blog
                 </a>
                 <a href="/belajar.html"
-                    class="text-purple-900 font-semibold hover:text-purple-600 border-b-2 border-transparent hover:border-purple-600 transition-all duration-300">
+                    class="text-purple-900 text-lg font-semibold hover:text-purple-600 border-b-2 border-transparent hover:border-purple-600 transition-all duration-300">
                     Belajar
                 </a>
             </div>
-    
+
             <!-- Button -->
             <div class="hidden md:block space-x-4">
                 <a href="#"
                     class="px-4 py-2 border border-purple-400 text-purple-900 hover:text-white rounded-lg hover:bg-purple-600 transition-colors duration-300">
                     Sign Up
                 </a>
-                <a href="#" class="px-4 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-900 transition-colors duration-300">
+                <a href="#"
+                    class="px-4 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-900 transition-colors duration-300">
                     Sign In
                 </a>
             </div>
-    
+
             <!-- Mobile Menu Button -->
             <div class="md:hidden">
                 <button id="mobile-menu-button" class="focus:outline-none">
@@ -59,17 +65,29 @@
                 </button>
             </div>
         </div>
-    
+
         <!-- Mobile Menu -->
         <div id="mobile-menu"
             class="hidden flex-col space-y-2 py-4 px-6 bg-white shadow-lg transform transition-transform duration-500 ease-in-out opacity-0">
-            <a href="/index.html" class="block text-purple-900 font-semibold hover:text-purple-600">Home</a>
+            <a href="/index.html"
+                class="block text-purple-900 font-semibold hover:text-purple-600">Home</a>
             <a href="/about.html" class="block text-purple-900 font-semibold hover:text-purple-600">About</a>
             <a href="/blog.html" class="block text-purple-900 font-semibold hover:text-purple-600">Blog</a>
             <a href="/belajar.html" class="block text-purple-900 font-semibold hover:text-purple-600">Belajar</a>
+            <!-- Mobile Buttons -->
+            <div class="mt-4 space-y-2">
+                <a href="#"
+                    class="block w-24 px-4 py-2 text-center border border-purple-400 text-purple-900 hover:text-white rounded-lg hover:bg-purple-600 transition-colors duration-300">
+                    Sign Up
+                </a>
+                <a href="#"
+                    class="block w-24 px-4 py-2 text-center bg-purple-600 text-white rounded-lg hover:bg-purple-900 transition-colors duration-300">
+                    Sign In
+                </a>
+            </div>
         </div>
     </nav>
-    
+
     <!-- End Navbar -->
 
     <!-- Hero Section -->
@@ -88,7 +106,8 @@
                         Yang Teruji</span> Oleh Ahli Bahasa Seluruh Dunia!
                 </p>
                 <div class="space-y-4 lg:space-x-4 lg:space-y-0 flex flex-col lg:flex-row ">
-                    <a href="#" class="px-6 py-3 bg-indigo-500 text-white rounded-lg hover:bg-indigo-700 shadow-lg transition-colors duration-300">
+                    <a href="#"
+                        class="px-6 py-3 bg-indigo-500 text-white rounded-lg hover:bg-indigo-700 shadow-lg transition-colors duration-300">
                         Mulai Belajar Sekarang
                     </a>
                     <a href="#"
@@ -111,7 +130,7 @@
     <section class="bg-white py-10">
         <!-- Judul Section -->
         <div class="container mx-auto px-4 max-w-screen-md">
-            <h2 class="text-md font-semibold text-center text-teal-500">Fitur LinguaLearn</h2>
+            <h2 class="text-md font-semibold text-center text-teal-500 mb-5">Fitur LinguaLearn</h2>
             <h3 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-center text-purple-900 mb-8">
                 Modul Yang Berstandar Internasional Dan Lingkungan Belajar Yang Mendukung
             </h3>
@@ -127,7 +146,7 @@
                         class="icon flex items-center justify-center w-12 h-12 bg-gray-200 text-purple-600 rounded-lg mr-4">
                         <i class="fi fi-rr-devices"></i>
                     </div>
-                    
+
                     <!-- Teks -->
                     <h3 class="text-lg font-bold text-purple-900">Modul Pembelajaran</h3>
                 </div>
@@ -196,7 +215,7 @@
     <section class="bg-white py-10">
         <!-- Judul Section -->
         <div class="container mx-auto px-4 max-w-screen-md">
-            <h2 class="text-md font-semibold text-center text-teal-500">Metode Belajar LinguaLearn</h2>
+            <h2 class="text-md font-semibold text-center text-teal-500 mb-5">Metode Belajar LinguaLearn</h2>
             <h3 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-center text-purple-900 mb-8">
                 Menjadikan Pembelajaran Yang Menarik Dan Efisien Adalah Tujuan Kami
             </h3>
@@ -263,19 +282,21 @@
     <section class="bg-white py-10">
         <!-- Judul Section -->
         <div class="container mx-auto px-4 max-w-screen-md">
-            <h2 class="text-md font-semibold text-center text-teal-500">Penutur Asli LinguaLearn</h2>
+            <h2 class="text-md font-semibold text-center text-teal-500 mb-5">Penutur Asli LinguaLearn</h2>
             <h3 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-center text-purple-900 mb-8">
                 Mari Berkenalan Dengan Penutur Asli Kami
             </h3>
         </div>
 
 
-        <div class="card-section grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-4xl mx-auto px-4 py-7">
+        <div
+            class="card-section grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-4xl mx-auto px-4 py-7">
             <!-- Card 1 -->
             <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 text-center">
                 <!-- Foto Profil -->
                 <div class="w-24 h-24 mx-auto mb-4">
-                    <img src="https://s3-alpha-sig.figma.com/img/d0cd/3adb/501c64c1b4cf766de6abb9fe8925fb5f?Expires=1733702400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=KdoFrSf5GVpdTa4qRLtgYly~ikPrt~ro5etwp6IcTPKgzHwx3NBJQOaHAWgMXbFyWhMCg09T0f60SvI825Bq2kXhnchPvgpmlxhvbBjYq7Lf8I59G29npwSLesK1u-xfJWdXpaAA6Z14PXJhe5BJotHzaXE69lqqLUuqJY7r-fJbTwnm~OzkIn-KYjoDPSbdwf9W6tf9TaKczZJshkpyjSu4nL4B2T8MgUD5bmN54Zuxv0mqLkoLyRFkAPhB~wPmeOueZVd3UgJzGTfDPPvQUZ6YV2eQXrG5oPTK6lWFya3MhaXGYlJVbrp7dMhRJ6BZs7ZFxn88jw-wAu1xvQDPCg__" alt="Foto Theresa Webb"
+                    <img src="https://s3-alpha-sig.figma.com/img/d0cd/3adb/501c64c1b4cf766de6abb9fe8925fb5f?Expires=1733702400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=KdoFrSf5GVpdTa4qRLtgYly~ikPrt~ro5etwp6IcTPKgzHwx3NBJQOaHAWgMXbFyWhMCg09T0f60SvI825Bq2kXhnchPvgpmlxhvbBjYq7Lf8I59G29npwSLesK1u-xfJWdXpaAA6Z14PXJhe5BJotHzaXE69lqqLUuqJY7r-fJbTwnm~OzkIn-KYjoDPSbdwf9W6tf9TaKczZJshkpyjSu4nL4B2T8MgUD5bmN54Zuxv0mqLkoLyRFkAPhB~wPmeOueZVd3UgJzGTfDPPvQUZ6YV2eQXrG5oPTK6lWFya3MhaXGYlJVbrp7dMhRJ6BZs7ZFxn88jw-wAu1xvQDPCg__"
+                        alt="Foto Theresa Webb"
                         class="w-full h-full object-cover rounded-full border-2 border-gray-300 shadow-sm" />
                 </div>
                 <!-- Nama -->
@@ -297,7 +318,8 @@
             <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 text-center">
                 <!-- Foto Profil -->
                 <div class="w-24 h-24 mx-auto mb-4">
-                    <img src="https://s3-alpha-sig.figma.com/img/6cc0/d5cf/ba3dce1df6f438f7ab3ab477324d73b9?Expires=1733702400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=aMwrtF3pTRe7y0fvYoNG3BMMOaFA64Pxf0N585qBOSEO9bOddZa9a-i-iEYI88PIPktF3JMPAnclMdNTB~maigQLwmIX5qRsfs18XwiQ2q0l8gq0WBx-NdcLhHWHb6Ku-tuUfrypqv~M7t0vH2HXoaTJVS3QqWLTr0MlAHCRZOwIz2tvfnl6WWiNWVsgpvH~rNtcXYHv0rKVlXOLNkEb7Ftg17Tt2zc~01tg3nfDugLJ5ROljUg0jr95l2-rpZ9SK3prHCO80syhNW-YZg91ok25B5tB4u7TW0HQkqBmQu-4EHXNx46DssCVjHB0TSysffBt4RAnylgbTUAW9BLGFw__" alt="Foto Theresa Webb"
+                    <img src="https://s3-alpha-sig.figma.com/img/6cc0/d5cf/ba3dce1df6f438f7ab3ab477324d73b9?Expires=1733702400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=aMwrtF3pTRe7y0fvYoNG3BMMOaFA64Pxf0N585qBOSEO9bOddZa9a-i-iEYI88PIPktF3JMPAnclMdNTB~maigQLwmIX5qRsfs18XwiQ2q0l8gq0WBx-NdcLhHWHb6Ku-tuUfrypqv~M7t0vH2HXoaTJVS3QqWLTr0MlAHCRZOwIz2tvfnl6WWiNWVsgpvH~rNtcXYHv0rKVlXOLNkEb7Ftg17Tt2zc~01tg3nfDugLJ5ROljUg0jr95l2-rpZ9SK3prHCO80syhNW-YZg91ok25B5tB4u7TW0HQkqBmQu-4EHXNx46DssCVjHB0TSysffBt4RAnylgbTUAW9BLGFw__"
+                        alt="Foto Theresa Webb"
                         class="w-full h-full object-cover rounded-full border-2 border-gray-300 shadow-sm" />
                 </div>
                 <!-- Nama -->
@@ -319,7 +341,8 @@
             <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 text-center">
                 <!-- Foto Profil -->
                 <div class="w-24 h-24 mx-auto mb-4">
-                    <img src="https://s3-alpha-sig.figma.com/img/2bf9/3a71/d8003e7c5abaae02be0c524fe88ec378?Expires=1733702400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=jL6hkFkj5ikpfi9dtg653ui81HLZkzl0K0hIAn0bH8rlyNcE7hr9Y~fpDjVacoDLo4mkdsDRnR2Uaii1GB5C1cAaha~aUAIBfZJja99xdNtXK1tnMWYk0QGGJxcKd9OIl8A6ZjCOVx8fjFDYZRBhE~TiJcdOpjw9NUp5j58IR-PqvhIjKxLA0ntNS~z0wV4NCdwukJYTszsXqoiUoSRFg03mATZuR7SIa-AySe5eVPxc40k6vvREWl-~cJThv8Yx~Frl6Ryf36ygnmwCFalyRA~S2qmb-Y0Lpaivmnea8O3WKkwK8bOO71GEWXgn5UsF1X7XeDbX5p0xqBmxudGAnA__" alt="Foto Theresa Webb"
+                    <img src="https://s3-alpha-sig.figma.com/img/2bf9/3a71/d8003e7c5abaae02be0c524fe88ec378?Expires=1733702400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=jL6hkFkj5ikpfi9dtg653ui81HLZkzl0K0hIAn0bH8rlyNcE7hr9Y~fpDjVacoDLo4mkdsDRnR2Uaii1GB5C1cAaha~aUAIBfZJja99xdNtXK1tnMWYk0QGGJxcKd9OIl8A6ZjCOVx8fjFDYZRBhE~TiJcdOpjw9NUp5j58IR-PqvhIjKxLA0ntNS~z0wV4NCdwukJYTszsXqoiUoSRFg03mATZuR7SIa-AySe5eVPxc40k6vvREWl-~cJThv8Yx~Frl6Ryf36ygnmwCFalyRA~S2qmb-Y0Lpaivmnea8O3WKkwK8bOO71GEWXgn5UsF1X7XeDbX5p0xqBmxudGAnA__"
+                        alt="Foto Theresa Webb"
                         class="w-full h-full object-cover rounded-full border-2 border-gray-300 shadow-sm" />
                 </div>
                 <!-- Nama -->
@@ -341,7 +364,8 @@
             <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 text-center">
                 <!-- Foto Profil -->
                 <div class="w-24 h-24 mx-auto mb-4">
-                    <img src="https://s3-alpha-sig.figma.com/img/473e/4f6e/db44d3ffbf11d4bad3cc7a6830822332?Expires=1733702400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=cCPYvzEqyMS9UXeZNCfEPsGW9-0rzeKt3DgbRl-3pqtgJsWNSFwu0YxSA5asdlR-4mMWoxhMFeoLu1QDQpnJ2tp0YBcWXOgT7p9XR01JYR0jz8W~Ba-QBfml~Z3Ge0SEYe31Sh0RtOGbgb04NoPJpMMIlA9opIVLSvufRdIPXZE4oIMHO4JoSHwOu0srQkwPJp~6~V3ZRu1oHHVBMNQeX0K9CmEwGKSbLqdxPAFLHoc5fLOJV5hF9-kftgqvA5QcVzjSYhAWGlipnaJTnLpDzEtPkDhn9A3X6pZmBQgLPJFFzrD6FSndAb1ti111mPeuXgxquQlWC4TlmKS-8Y422g__" alt="Foto Theresa Webb"
+                    <img src="https://s3-alpha-sig.figma.com/img/473e/4f6e/db44d3ffbf11d4bad3cc7a6830822332?Expires=1733702400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=cCPYvzEqyMS9UXeZNCfEPsGW9-0rzeKt3DgbRl-3pqtgJsWNSFwu0YxSA5asdlR-4mMWoxhMFeoLu1QDQpnJ2tp0YBcWXOgT7p9XR01JYR0jz8W~Ba-QBfml~Z3Ge0SEYe31Sh0RtOGbgb04NoPJpMMIlA9opIVLSvufRdIPXZE4oIMHO4JoSHwOu0srQkwPJp~6~V3ZRu1oHHVBMNQeX0K9CmEwGKSbLqdxPAFLHoc5fLOJV5hF9-kftgqvA5QcVzjSYhAWGlipnaJTnLpDzEtPkDhn9A3X6pZmBQgLPJFFzrD6FSndAb1ti111mPeuXgxquQlWC4TlmKS-8Y422g__"
+                        alt="Foto Theresa Webb"
                         class="w-full h-full object-cover rounded-full border-2 border-gray-300 shadow-sm" />
                 </div>
                 <!-- Nama -->
@@ -366,21 +390,22 @@
 
     <!-- Mari mari -->
     <section class="relative bg-white p-12">
-    <div class="container mx-auto px-6 lg:px-20 py-12 flex flex-col items-center justify-center max-w-3xl">
-        <h3 class="text-xl sm:text-2xl lg:text-4xl font-bold text-center text-purple-900 mb-8">
-            Mari Mulai Belajar Bahasa Apapun Yang Kamu Mau Bersama Kami  
-        </h3>
-        <a href="#" class="px-6 py-3 text-sm sm:text-base bg-indigo-500 text-white rounded-lg hover:bg-indigo-700 shadow-lg w-full sm:w-auto text-center transition-colors duration-300">
-            Hubungi Kami Untuk Lebih Lanjut
-        </a>        
-    </div>            
-</section>
+        <div class="container mx-auto px-6 lg:px-20 py-12 flex flex-col items-center justify-center max-w-3xl">
+            <h3 class="text-xl sm:text-2xl lg:text-4xl font-bold text-center text-purple-900 mb-8">
+                Mari Mulai Belajar Bahasa Apapun Yang Kamu Mau Bersama Kami
+            </h3>
+            <a href="#"
+                class="px-6 py-3 text-sm sm:text-base bg-indigo-500 text-white rounded-lg hover:bg-indigo-700 shadow-lg w-full sm:w-auto text-center transition-colors duration-300">
+                Hubungi Kami Untuk Lebih Lanjut
+            </a>
+        </div>
+    </section>
 
-     
+
 
     <footer class="bg-purple-900 text-white py-10 mt-12">
-        <div class="max-w-7xl mx-auto px-6">            
-    
+        <div class="max-w-7xl mx-auto px-6">
+
             <!-- Menggunakan flex untuk mendistribusikan dua kolom -->
             <div class="flex justify-between items-center space-x-12">
                 <!-- Kolom 1: About -->
@@ -390,7 +415,7 @@
                         Tempat Belajar Bahasa Asing Yang Ga Bikin Pusing
                     </p>
                 </div>
-    
+
                 <!-- Kolom 2: Sosial Media -->
                 <div>
                     <h3 class="text-xl font-semibold mb-4">Tetap Terhubung Dengan Kami</h3>
@@ -407,20 +432,20 @@
                     </div>
                 </div>
             </div>
-    
+
             <!-- Footer text dan copyright -->
             <div class="mt-8 text-center border-t border-purple-700 pt-4">
                 <p class="text-sm">&copy; 2024 Saya Punya. Semua hak dilindungi.</p>
             </div>
         </div>
     </footer>
-    
-    
-    
-    
-    
-        
-      
+
+
+
+
+
+
+
     <!-- End Mari mari -->
 
 

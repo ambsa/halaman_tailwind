@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="/assets/img/logo.png" type="image/png">
+
     <!-- Tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/a329084b4e.js" crossorigin="anonymous"></script>
@@ -19,40 +23,41 @@
         <div class="container mx-auto px-6 flex justify-between items-center py-6">
             <!-- Logo -->
             <div>
-                <a href="#"><img src="/assets/img/logo.png" alt="Logo" class="h-6 md:h-8 lg:h-10 w-auto"></a>
+                <a href="/index.html"><img src="/assets/img/logo.png" alt="Logo" class="h-6 md:h-8 lg:h-10 w-auto"></a>
             </div>
-    
+
             <!-- Menu -->
             <div class="hidden md:flex space-x-8">
                 <a href="/index.html"
-                    class="text-purple-900 font-semibold hover:text-purple-600 border-b-2 border-transparent hover:border-purple-600 transition-all duration-300">
+                    class="text-purple-900 text-lg font-semibold hover:text-purple-600 border-b-2 border-transparent hover:border-purple-600 transition-all duration-300">
                     Home
                 </a>
                 <a href="/about.html"
-                    class="text-purple-900 font-semibold hover:text-purple-600 border-b-2 border-transparent hover:border-purple-600 transition-all duration-300">
+                    class="text-purple-900 text-lg font-semibold hover:text-purple-600 border-b-2 border-transparent hover:border-purple-600 transition-all duration-300">
                     About Us
                 </a>
                 <a href="/blog.html"
-                    class="text-purple-900 font-semibold hover:text-purple-600 border-b-2 border-transparent hover:border-purple-600 transition-all duration-300">
+                    class="text-purple-900 text-lg font-semibold hover:text-purple-600 border-b-2 border-transparent hover:border-purple-600 transition-all duration-300">
                     Blog
                 </a>
                 <a href="/belajar.html"
-                    class="text-purple-900 font-semibold hover:text-purple-600 border-b-2 border-transparent hover:border-purple-600 transition-all duration-300">
+                    class="text-purple-900 text-lg font-semibold hover:text-purple-600 border-b-2 border-transparent hover:border-purple-600 transition-all duration-300">
                     Belajar
                 </a>
             </div>
-    
+
             <!-- Button -->
             <div class="hidden md:block space-x-4">
                 <a href="#"
                     class="px-4 py-2 border border-purple-400 text-purple-900 hover:text-white rounded-lg hover:bg-purple-600 transition-colors duration-300">
                     Sign Up
                 </a>
-                <a href="#" class="px-4 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-900 transition-colors duration-300">
+                <a href="#"
+                    class="px-4 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-900 transition-colors duration-300">
                     Sign In
                 </a>
             </div>
-    
+
             <!-- Mobile Menu Button -->
             <div class="md:hidden">
                 <button id="mobile-menu-button" class="focus:outline-none">
@@ -60,14 +65,26 @@
                 </button>
             </div>
         </div>
-    
+
         <!-- Mobile Menu -->
         <div id="mobile-menu"
             class="hidden flex-col space-y-2 py-4 px-6 bg-white shadow-lg transform transition-transform duration-500 ease-in-out opacity-0">
-            <a href="/index.html" class="block text-purple-900 font-semibold hover:text-purple-600">Home</a>
+            <a href="/index.html"
+                class="block text-purple-900 font-semibold hover:text-purple-600 nav-link active:text-purple-900">Home</a>
             <a href="/about.html" class="block text-purple-900 font-semibold hover:text-purple-600">About</a>
             <a href="/blog.html" class="block text-purple-900 font-semibold hover:text-purple-600">Blog</a>
             <a href="/belajar.html" class="block text-purple-900 font-semibold hover:text-purple-600">Belajar</a>
+            <!-- Mobile Buttons -->
+            <div class="mt-4 space-y-2">
+                <a href="#"
+                    class="block w-24 px-4 py-2 text-center border border-purple-400 text-purple-900 hover:text-white rounded-lg hover:bg-purple-600 transition-colors duration-300">
+                    Sign Up
+                </a>
+                <a href="#"
+                    class="block w-24 px-4 py-2 text-center bg-purple-600 text-white rounded-lg hover:bg-purple-900 transition-colors duration-300">
+                    Sign In
+                </a>
+            </div>
         </div>
     </nav>
     <!-- End Navbar -->
@@ -76,12 +93,76 @@
         <!-- Judul Section -->
         <div class="container mx-auto px-4 max-w-screen-md">
             <h3 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-center text-purple-900 mb-8 mt-5">
-                Kelas Yang Tersedia Di  <span class="text-teal-500">LinguaLearn</span>
-            </h3>            
+                Kelas Yang Tersedia Di <span class="text-teal-500">LinguaLearn</span>
+            </h3>
             <h4 class="text-xl sm:text-3xl lg:text-xl text-center text-purple-900 font-normal mb-8 mt-5">
                 Semua Kelas Yang Tersedia Untuk Belajar Bahasa Apapun Bersama LinguaLearn
-            </h4>            
+            </h4>
         </div>
+    </section>
+
+    <section class="bg-white">
+        <div class="container mx-auto p-6">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <!-- Card 1 -->
+                <div class="max-w-sm rounded-lg shadow-lg overflow-hidden bg-white">
+                    <img class="w-full h-48 object-cover rounded-lg"
+                        src="https://s3-alpha-sig.figma.com/img/c709/881f/e17fc1c0163748e3463d205639c7fda8?Expires=1733702400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=dGkAZwOvo3c8jnm~mj~MpdoJQdQlQNkGnFHo~CPGUXmYkOZsFZT~evfjWDrorw2PnAS2KRqPGKlzhGl5cJw00FyocQpnhDYl1xnQIdqBL0QV4s34ZW8PuRrwz9QiforBAC8NXFNYUxI91X9asIRREcJnETWYEL78PUfBVoknXs4zP~nPoDlg1gbd2mFA7FQb--xughiezTOqHo6V4eeDZrqHVsRLYY4PPWO-4GUHzhzUthxxPDiR9dmYP0KGKDAFBc8Ld-snARRC2SWJSC7JdwIXEY7NkGjajVSi4OdWc7n7AcqYCaKP5cpK548ZNO~wtuPrEaRTB3GUDYkevwJOsg__"
+                        alt="Card Image">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-2">Modul 1</h3>
+                        <p class="text-gray-600 text-lg mb-4">Basic Speaking</p>
+                        <a href="#"
+                            class="px-5 py-3 bg-blue-500 text-white text-md font-medium rounded-full hover:bg-blue-600 flex flex-col items-center shadow-lg transition-colors duration-300">
+                            Belajar Sekarang
+                        </a>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="max-w-sm rounded-lg shadow-lg overflow-hidden bg-white">
+                    <img class="w-full h-48 object-cover rounded-lg"
+                        src="https://s3-alpha-sig.figma.com/img/c709/881f/e17fc1c0163748e3463d205639c7fda8?Expires=1733702400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=dGkAZwOvo3c8jnm~mj~MpdoJQdQlQNkGnFHo~CPGUXmYkOZsFZT~evfjWDrorw2PnAS2KRqPGKlzhGl5cJw00FyocQpnhDYl1xnQIdqBL0QV4s34ZW8PuRrwz9QiforBAC8NXFNYUxI91X9asIRREcJnETWYEL78PUfBVoknXs4zP~nPoDlg1gbd2mFA7FQb--xughiezTOqHo6V4eeDZrqHVsRLYY4PPWO-4GUHzhzUthxxPDiR9dmYP0KGKDAFBc8Ld-snARRC2SWJSC7JdwIXEY7NkGjajVSi4OdWc7n7AcqYCaKP5cpK548ZNO~wtuPrEaRTB3GUDYkevwJOsg__"
+                        alt="Card Image">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-2">Modul 2</h3>
+                        <p class="text-gray-600 text-lg mb-4">Basic Speaking</p>
+                        <a href="#"
+                            class="flex flex-col items-center px-5 py-3 bg-blue-500 text-white text-md font-medium rounded-full hover:bg-blue-600 shadow-lg transition-colors duration-300">
+                            Belajar Sekarang
+                        </a>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="max-w-sm rounded-lg shadow-lg overflow-hidden bg-white">
+                    <img class="w-full h-48 object-cover"
+                        src="https://s3-alpha-sig.figma.com/img/c709/881f/e17fc1c0163748e3463d205639c7fda8?Expires=1733702400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=dGkAZwOvo3c8jnm~mj~MpdoJQdQlQNkGnFHo~CPGUXmYkOZsFZT~evfjWDrorw2PnAS2KRqPGKlzhGl5cJw00FyocQpnhDYl1xnQIdqBL0QV4s34ZW8PuRrwz9QiforBAC8NXFNYUxI91X9asIRREcJnETWYEL78PUfBVoknXs4zP~nPoDlg1gbd2mFA7FQb--xughiezTOqHo6V4eeDZrqHVsRLYY4PPWO-4GUHzhzUthxxPDiR9dmYP0KGKDAFBc8Ld-snARRC2SWJSC7JdwIXEY7NkGjajVSi4OdWc7n7AcqYCaKP5cpK548ZNO~wtuPrEaRTB3GUDYkevwJOsg__"
+                        alt="Card Image">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-2">Modul 3</h3>
+                        <p class="text-gray-600 text-lg mb-4">Basic Speaking</p>
+                        <a href="#"
+                            class="flex flex-col items-center px-5 py-3 bg-blue-500 text-white text-md font-medium rounded-full hover:bg-blue-600 shadow-lg transition-colors duration-300">
+                            Belajar Sekarang
+                        </a>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="max-w-sm rounded-lg shadow-lg overflow-hidden bg-white">
+                    <img class="w-full h-48 object-cover"
+                        src="https://s3-alpha-sig.figma.com/img/c709/881f/e17fc1c0163748e3463d205639c7fda8?Expires=1733702400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=dGkAZwOvo3c8jnm~mj~MpdoJQdQlQNkGnFHo~CPGUXmYkOZsFZT~evfjWDrorw2PnAS2KRqPGKlzhGl5cJw00FyocQpnhDYl1xnQIdqBL0QV4s34ZW8PuRrwz9QiforBAC8NXFNYUxI91X9asIRREcJnETWYEL78PUfBVoknXs4zP~nPoDlg1gbd2mFA7FQb--xughiezTOqHo6V4eeDZrqHVsRLYY4PPWO-4GUHzhzUthxxPDiR9dmYP0KGKDAFBc8Ld-snARRC2SWJSC7JdwIXEY7NkGjajVSi4OdWc7n7AcqYCaKP5cpK548ZNO~wtuPrEaRTB3GUDYkevwJOsg__"
+                        alt="Card Image">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-2">Modul 4</h3>
+                        <p class="text-gray-600 text-lg mb-4">Basic Speaking</p>
+                        <a href="#"
+                            class="flex flex-col items-center px-5 py-3 bg-blue-500 text-white text-md font-medium rounded-full hover:bg-blue-600 shadow-lg transition-colors duration-300">
+                            Belajar Sekarang
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </section>
 
 
