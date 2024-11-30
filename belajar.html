@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/a329084b4e.js" crossorigin="anonymous"></script>
+    <!-- Flaticon -->
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="bg-transparent">
+        <div class="container mx-auto px-6 flex justify-between items-center py-6">
+            <!-- Logo -->
+            <div>
+                <a href="#"><img src="/assets/img/logo.png" alt="Logo" class="h-6 md:h-8 lg:h-10 w-auto"></a>
+            </div>
+    
+            <!-- Menu -->
+            <div class="hidden md:flex space-x-8">
+                <a href="/index.html"
+                    class="text-purple-900 font-semibold hover:text-purple-600 border-b-2 border-transparent hover:border-purple-600 transition-all duration-300">
+                    Home
+                </a>
+                <a href="/about.html"
+                    class="text-purple-900 font-semibold hover:text-purple-600 border-b-2 border-transparent hover:border-purple-600 transition-all duration-300">
+                    About Us
+                </a>
+                <a href="/blog.html"
+                    class="text-purple-900 font-semibold hover:text-purple-600 border-b-2 border-transparent hover:border-purple-600 transition-all duration-300">
+                    Blog
+                </a>
+                <a href="/belajar.html"
+                    class="text-purple-900 font-semibold hover:text-purple-600 border-b-2 border-transparent hover:border-purple-600 transition-all duration-300">
+                    Belajar
+                </a>
+            </div>
+    
+            <!-- Button -->
+            <div class="hidden md:block space-x-4">
+                <a href="#"
+                    class="px-4 py-2 border border-purple-400 text-purple-900 hover:text-white rounded-lg hover:bg-purple-600 transition-colors duration-300">
+                    Sign Up
+                </a>
+                <a href="#" class="px-4 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-900 transition-colors duration-300">
+                    Sign In
+                </a>
+            </div>
+    
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="focus:outline-none">
+                    <i class="fi fi-rr-bars-staggered"></i>
+                </button>
+            </div>
+        </div>
+    
+        <!-- Mobile Menu -->
+        <div id="mobile-menu"
+            class="hidden flex-col space-y-2 py-4 px-6 bg-white shadow-lg transform transition-transform duration-500 ease-in-out opacity-0">
+            <a href="/index.html" class="block text-purple-900 font-semibold hover:text-purple-600">Home</a>
+            <a href="/about.html" class="block text-purple-900 font-semibold hover:text-purple-600">About</a>
+            <a href="/blog.html" class="block text-purple-900 font-semibold hover:text-purple-600">Blog</a>
+            <a href="/belajar.html" class="block text-purple-900 font-semibold hover:text-purple-600">Belajar</a>
+        </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <section class="bg-white py-10">
+        <!-- Judul Section -->
+        <div class="container mx-auto px-4 max-w-screen-md">
+            <h3 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-center text-purple-900 mb-8 mt-5">
+                Kelas Yang Tersedia Di  <span class="text-teal-500">LinguaLearn</span>
+            </h3>            
+            <h4 class="text-xl sm:text-3xl lg:text-xl text-center text-purple-900 font-normal mb-8 mt-5">
+                Semua Kelas Yang Tersedia Untuk Belajar Bahasa Apapun Bersama LinguaLearn
+            </h4>            
+        </div>
+    </section>
+
+
+
+    <footer class="bg-purple-900 text-white py-10 mt-12">
+        <div class="max-w-7xl mx-auto px-6">
+
+            <!-- Menggunakan flex untuk mendistribusikan dua kolom -->
+            <div class="flex justify-between items-center space-x-12">
+                <!-- Kolom 1: About -->
+                <div>
+                    <img src="/assets/img/logo.png" alt="">
+                    <p class="text-sm mt-5">
+                        Tempat Belajar Bahasa Asing Yang Ga Bikin Pusing
+                    </p>
+                </div>
+
+                <!-- Kolom 2: Sosial Media -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Tetap Terhubung Dengan Kami</h3>
+                    <div class="flex space-x-6">
+                        <a href="#" class="text-xl hover:text-indigo-400">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="#" class="text-xl hover:text-indigo-400">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                        <a href="#" class="text-xl hover:text-indigo-400">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer text dan copyright -->
+            <div class="mt-8 text-center border-t border-purple-700 pt-4">
+                <p class="text-sm">&copy; 2024 Saya Punya. Semua hak dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="/assets/js/script.js"></script>
+</body>
+
+</html>
