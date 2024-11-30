@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }
   });
 
-  // Close menu when clicking outside
+  // Menutup menu tampilan mobile dimanapun
   body.addEventListener("click", (event) => {
       if (!mobileMenu.contains(event.target) && !mobileMenuButton.contains(event.target)) {
           // Close the menu with a smooth transition if clicked outside
@@ -41,3 +41,23 @@ document.addEventListener("DOMContentLoaded", () => {
       }
   });
 });
+
+// button back to top
+const backToTopBtn = document.getElementById('backToTop');
+
+        // Menampilkan tombol saat scroll
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTopBtn.classList.remove('hidden');
+            } else {
+                backToTopBtn.classList.add('hidden');
+            }
+        });
+
+        // Scroll ke atas saat tombol diklik
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
